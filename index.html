@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlareDial - Your Custom Phone Style</title>
+  <meta name="description" content="Dial into your unique phone style with custom wallpapers and case designs based on your phone model, gender, height, and weight!">
+  <meta name="keywords" content="custom phone wallpaper, personalized case style, phone design, flaredial">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FlareDial</h1>
+    <p>Dial up your unique phone style!</p>
+  </header>
+  <main>
+    <form id="styleForm">
+      <label>Phone Model: <input type="text" id="phone" placeholder="e.g., iPhone 13" required></label><br>
+      <label>Gender: 
+        <select id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </label><br>
+      <label>Height (cm): <input type="number" id="height" placeholder="e.g., 170" min="100" max="250" required></label><br>
+      <label>Weight (kg): <input type="number" id="weight" placeholder="e.g., 70" min="30" max="200" required></label><br>
+      <button type="submit">Flare My Style!</button>
+    </form>
+    <div id="result"></div>
+  </main>
+  <footer>
+    <a href="privacy.html">Privacy & Policy</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
